@@ -17,9 +17,9 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       - name: Build Docker image
-        run: docker build -t charlesxiao/<your-docker-image>:latest .
+        run: docker build -t charlesxiao/xsshd:latest .
       - name: Push Docker image
-        run: docker push charlesxiao/<your-docker-image>:latest
+        run: docker push charlesxiao/xsshd:latest
       - name: Pull Docker image
-        run: docker pull charlesxiao/<your-docker-image>:latest
+        run: docker pull charlesxiao/xsshd:latest
           
